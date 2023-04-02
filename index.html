@@ -73,8 +73,12 @@
 
 // git reset - by default git reset (without mode) uses --mixed mode and HEAD
 
+// by carefull using --git reset hard, because it affects following commits (ex: commit made by your partners) which will result in a few versions of a project
+// so don't use it when working in public repository with other programmers
 
-
+// git checkout - allows to move between commits and see how it looked. This command doesn't delete commits and changes HEAD to 'detached' stage
+// which means it separated from current version of a project. All changes made is this stage are deleted when HEAD moved to another commit
+// to save thouse changes it's necessary to work with branches correctly 
 
     </script>
 </body>
