@@ -33,10 +33,45 @@
 // git status - можешь проверить, сработала ли команда выше. Узнать текущий статус репозитория
 
 // базовая работа: 1) файл создан "untracked" 2) git add "staged" (подготовленный) 3) git commit "commited" (зафиксированный) || git commit -m "что изменилось"
-// либо            1) файл изменен "modified" 2) 3) аналогично
+// либо            1)* файл изменен "modified" 2) 3) аналогично
+// т.е. каждый раз при создании файла или его изменении файл получает статус 1) или 1)*, поэтому нужно выполнять 2) и 3)
+
+// git add in different ways:
+
+// git add index.html file2.txt
+// git add . - add all files in a current folder
+// git add *.html - add all .html extension files in a current folder
+// git add someDirectory/*.txt - add all .txt extension files in someDirectory folder
+// git add someDir/ - add all files in someDir folder
+// git add "*.js" - add all .js extension files in the project
+
+// git log - show history of all commits
+
+// git diff - show the difference between ... current 'untracked' stage and the last commit
+// git diff --staged - current 'staged' stage and the last commit
+// git diff COMMIT_ID - current repository and chosen commit by id (hash)
 
 
+// git reset - returns to the desired commit
 
+// HEAD-> points at current project stage i.e. current commit?
+// HEAD ^ - 1 commit back
+// HEAD ^^^ - 3 commits back
+// HEAD~2 - 2 commits back
+
+// 3 reset modes: --soft, --mixed, --hard depending on their hardness
+// git reset syntax: git reset[--soft | --mixed | --hard] [commit (id, hash or diferent variants with HEAD)]
+
+// git reset --hard - returns a project to chosen commit while completely and irretrievably deletes all commits after the chosen
+// ex: git reset --hard HEAD^^
+
+// git reset --mixed - returns a project to a chosen commit while turns all the commit's changes after the chosen into the 'unstaged' stage
+// that is, commits are deleted, but changes in a project don't apply till stage ('unstaged') changes to 'staged' (git add) and then to 'commited' (git commit)
+// ex: git reset --mixed HEAD~3
+
+// git rese --soft - similarly to the --mixed mode but changes turns into 'staged' stage
+
+// git reset - by default git reset (without mode) uses --mixed mode and HEAD
 
 
 
