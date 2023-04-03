@@ -51,9 +51,8 @@
 // git diff --staged - current 'staged' stage and the last commit
 // git diff COMMIT_ID - current repository and chosen commit by id (hash)
 
-//RESET
+// RESET
 // git reset - returns to the desired commit
-
 // HEAD-> points at current project stage i.e. current commit?
 // HEAD ^ - 1 commit back
 // HEAD ^^^ - 3 commits back
@@ -76,12 +75,27 @@
 // by carefull using --git reset hard, because it affects following commits (ex: commit made by your partners) which will result in a few versions of a project
 // so don't use it when working in public repository with other programmers
 
-//CHECKOUT
+// CHECKOUT
 // git checkout - allows to move between commits and see how it looked. This command doesn't delete commits and changes HEAD to 'detached' stage
 // which means it separated from current version of a project. All changes made is this stage are deleted when HEAD moved to another commit
-// to save thouse changes it's necessary to work with branches correctly
+// to save thouse changes it's necessary to work with branches correctly 
 
-// git checkout master - return to a current commit
+// git checkout also allows to return files to a selected commit version: git chechout <commit id, hash, HEAD> -- pathToFile1 pathToFile2
+// if <identifier> not specified than files return to a last commit version. Works only for 'modified' or 'untracked' changes: git checkot -- index.html
+// or even just git checkout -- . - to return all files to a last commit. Works to modified or untracked changes
+// so in combination with git reset (which equal to git reset --mixed HEAD)  it's possible to delete 'staged' changes
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
