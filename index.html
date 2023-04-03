@@ -51,7 +51,7 @@
 // git diff --staged - current 'staged' stage and the last commit
 // git diff COMMIT_ID - current repository and chosen commit by id (hash)
 
-
+//RESET
 // git reset - returns to the desired commit
 
 // HEAD-> points at current project stage i.e. current commit?
@@ -69,18 +69,19 @@
 // that is, commits are deleted, but changes in a project don't apply till stage ('unstaged') changes to 'staged' (git add) and then to 'commited' (git commit)
 // ex: git reset --mixed HEAD~3
 
-// git rese --soft - similarly to the --mixed mode but changes turns into 'staged' stage
+// git reset --soft - similarly to the --mixed mode but changes turns into 'staged' stage
 
 // git reset - by default git reset (without mode) uses --mixed mode and HEAD
 
 // by carefull using --git reset hard, because it affects following commits (ex: commit made by your partners) which will result in a few versions of a project
 // so don't use it when working in public repository with other programmers
 
+//CHECKOUT
 // git checkout - allows to move between commits and see how it looked. This command doesn't delete commits and changes HEAD to 'detached' stage
 // which means it separated from current version of a project. All changes made is this stage are deleted when HEAD moved to another commit
 // to save thouse changes it's necessary to work with branches correctly
 
-// git checkout master return to a current commit
+// git checkout master - return to a current commit
 
     </script>
 </body>
