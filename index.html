@@ -85,11 +85,28 @@
 // or even just git checkout -- . - to return all files to a last commit. Works to modified or untracked changes
 // so in combination with git reset (which equal to git reset --mixed HEAD)  it's possible to delete 'staged' changes
 
-123123
+// COMMIT
+// git commit -a -m 'message' is equal to using 2 commands in a row: git add and git commit allowing to skip typing 2 commands
+// but it doesn't apply to new 'untracked' files, only to modified
+// git commit --amend -m 'new message' - update last commit without creating new one
+// if new message -m wasn't added be ready to type ':wq' to leave opening console
 
+// CLEAN
+// git clean deletes new files i.e. 'untracked' which couldn't be deleted by using git reset
+// git clean -n shows files that will be deleted. git clean -f deletes
 
+// REMOTE
+// git remote is a command for viewing remote repositories
+// git remote -v - view a list of remote repositories
+// git remote add REPOSITORE_NAME REPOSITORY_ADRESS - to add new repository. Ex:
+// git remote add origin https://github.com/imimmortallying/notes.git
+// REPOSITORY_NAME -->push || <--pull REPOSITORY_ADRESS
+// git remote remove REPOSITORY_NAME - to remove repository
 
+// pull algorithm:
+// create a new folder -> git inint -> git remote add origin https://github.com/imimmortallying/notes.git -> git pull origin master
 
+/////
 
 
 
