@@ -90,26 +90,6 @@
 // but it doesn't apply to new 'untracked' files, only to modified
 // git commit --amend -m 'new message' - update last commit without creating new one
 // if new message -m wasn't added be ready to type ':wq' to leave opening console
-// COMMIT
-// git commit -a -m 'message' is equal to using 2 commands in a row: git add and git commit allowing to skip typing 2 commands
-// but it doesn't apply to new 'untracked' files, only to modified
-// git commit --amend -m 'new message' - update last commit without creating new one
-// if new message -m wasn't added be ready to type ':wq' to leave opening console
-
-// CLEAN
-// git clean deletes new files i.e. 'untracked' which couldn't be deleted by using git reset
-// git clean -n shows files that will be deleted. git clean -f deletes
-// CLEAN
-// git clean deletes new files i.e. 'untracked' which couldn't be deleted by using git reset
-// git clean -n shows files that will be deleted. git clean -f deletes
-
-// REMOTE
-// git remote is a command for viewing remote repositories
-// git remote -v - view a list of remote repositories
-// git remote add REPOSITORE_NAME REPOSITORY_ADRESS - to add new repository. Ex:
-// git remote add origin https://github.com/imimmortallying/notes.git
-// REPOSITORY_NAME -->push || <--pull REPOSITORY_ADRESS
-// git remote remove REPOSITORY_NAME - to remove repository
 
 // CLEAN
 // git clean deletes new files i.e. 'untracked' which couldn't be deleted by using git reset
@@ -123,12 +103,11 @@
 // REPOSITORY_NAME -->push || <--pull REPOSITORY_ADRESS
 // git remote remove REPOSITORY_NAME - to remove repository
 
-// pull algorithm:
-// create a new folder -> git inint -> git remote add origin https://github.com/imimmortallying/notes.git -> git pull origin master
+// CLEAN
+// git clean deletes new files i.e. 'untracked' which couldn't be deleted by using git reset
+// git clean -n shows files that will be deleted. git clean -f deletes
 
-/////
-
-// pull algorithm:
+// PULL algorithm:
 // create a new folder -> git inint -> git remote add origin https://github.com/imimmortallying/notes.git -> git pull origin master
 // or instead just use git CLONE https://github.com/imimmortallying/notes.git in a directory
 
@@ -145,6 +124,7 @@
 // git branch -r - shows local branches. When project pushed to a remote repository creates a new branch (master -> origin/master).
 // The one that pulls/clones a local branch really works with this new remote one on his pc
 
+// merge conflicts, two variants: between branches and between a few local reposotories
     </script>
 </body>
 </html>
